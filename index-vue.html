@@ -4,9 +4,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <link rel="stylesheet" href="asset/style.css">
   <title>Document</title>
 </head>
+
+</head>
 <body>
+  <div id="app">
+
+    <header>
+
+      <div class="frame-logotipo">
+        <img src="./logotipo.png" alt="">
+        <select>
+          <option value=""><strong>TUTTI I GENERI</strong></option>
+          <option value=""><strong>POP</strong></option>
+          <option value=""><strong>ROCK</strong></option>
+          <option value=""><strong>METAL</strong></option>
+          <option value=""><strong>JAZZ</strong></option>
+        </select>
+      </div>
   
+    </header>
+
+    <main>
+
+        <div class="frame-card">
+          
+          <div v-for="disco in dischi"
+               class="card">  
+              <img :src="disco.poster" :alt="disco.title">     
+              <h3> {{disco.author}} </h3>
+              <h5>ALBUM: {{disco.title}} </h5>
+              <h5> ANNO: {{disco.year}} </h5>
+          </div>
+          <?php } ?>
+        </div>
+    
+      </main>
+    
+
+      
+
+  </div>
+
+  
+
+  </div>
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
